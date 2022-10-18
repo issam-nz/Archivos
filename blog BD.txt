@@ -1,0 +1,30 @@
+blog		- 
+
+articulo	- idArticulo, encabezado, contenido, (puede ser fecha) 
+
+etiqueta 	- idCat, nombreCat
+
+comentario	- idComentario, (puede ser fecha) 
+
+suscritor	- id, nombre, apeilldo, email
+
+autor		- id, nombre, apeilldo, email
+
+------------------------------------------
+
+blog contiene todo
+
+articulo esta en una etiqueta o muchos
+articulo puede tener comentarios
+articulo tiene un unico autor
+
+etiqueta tiene 0 o muchos articulos
+
+comentario debe tener un unico suscritor
+comentario debe ser de un articulo (no hay comentario sin articulo)
+
+suscritor escribe un comentario
+
+autor escribe un articulo
+
+https://lucid.app/lucidchart/689eae1f-df89-42d7-a6d9-6cf1e1635116/edit?view_items=uJ4X-09EfPyh&invitationId=inv_8b9fb333-2364-4723-b849-0fac4b14410b#

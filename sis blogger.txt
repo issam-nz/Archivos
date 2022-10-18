@@ -1,0 +1,26 @@
+
+El Kernel o Núcleo es un componente fundamental de cualquier sistema operativo.
+Es el encargado de que el software y el hardware de cualquier ordenador puedan trabajar juntos en un mismo sistema, para lo cual administra la memoria de los programas y procesos ejecutados, el tiempo de procesador que utilizan los programas, o se encarga de permitir el acceso y el correcto funcionamiento de periféricos y otros elementos físicos del equipo.
+
+
+
+wibndows estaba basando sus sis en los kernel windows 9x , donde el codigo basico
+tenía muxhas similitudes con MS-DOS.
+
+La principal característica del Kernel de Windows NT es que es bastante modular, y está basada en dos capas principales, la de usuario y la de kernel. El sistema utiliza cada una para diferentes tipos de programa. Por ejemplo, las aplicaciones se ejecutan en el modo usuario, y los componentes principales del sistema operativo en el modo kernel. Mientras, la mayoría de los drivers suelen usar el modo kernel, aunque con excepciones.
+windows kernel es un kernel híbrido
+
+
+ambos gestionan los problemas de memoira de forma parecida. tienen sistemas de "Swapping" para mover un proceso o parte de él temporalmente de la memoria principal a una secundaria de almacenamiento en el caso de que en la principal haya poco espacio. Windows lo hace en los ficheros pagefile.sys y swapfile.sys, mientras que Linux lo suele hacer en una partición, aunque también lo puede hacer en uno o varios ficheros o deshabilitarlo. Vamos que tiene más opciones.
+
+El kernel de Linux no tiene capa de usuario. Sólo tiene una, la del propio kernel, por lo que se le considera monolítico.
+
+
+win: 
+	- windows nt -
+	- codigo cerrado
+	- hibrido 
+
+linux: 
+	- codigo abierto yy cualquiera puede recogerlo y modificarlo
+	- tiene una sola capa (núcleo monolotíco)

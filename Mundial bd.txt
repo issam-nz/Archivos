@@ -1,0 +1,26 @@
+Jugador :	
+	- puede partenecer a un unico equipo
+	- puede actuar en varios puestos distintos
+	- en un determinado partido solo puede jugar en un puesto
+		jugador juega equipo
+
+Árbitros:
+	- En un partido intervienen 3 árbitros titulares, juez de línea
+	derecho, izquierdo, principal y un árbitro secundario. Un árbitro
+	puede realizar una función en un partido y otra distinta en otro
+	partido.
+
+Estadísticas: 
+	- Se desea saber los goles que ha marcado un jugador en
+	qué partido y en qué minuto, también se desea poder describir cómo
+	sucedió el gol.
+
+Porteros:
+	- Se desea almacenar cuántas paradas ha realizado, en qué
+	minuto, y en qué situación se han producido: penalti, tiro libre,
+	córner o jugada de ataque.
+
+Partidos: 
+	- Todos generan un acta arbitral donde se pueden incluir
+	todos los comentarios que el árbitro considere oportuno: lesiones,
+	expulsiones, tarjetas, etc.

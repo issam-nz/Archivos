@@ -1,0 +1,5 @@
+
+git init -b main : para empezar en esta carpeta con la rama prinicipal
+git remote add origin repo-link : para añadir un 
+git remote -v : para ver si el enlace funciona bien (fetch y pull)
+git push orgin main : para subir  

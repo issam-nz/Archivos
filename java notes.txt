@@ -1,0 +1,19 @@
+Herencia - Polimorfismo - Encapsulamiento
+
+
+metodo constructor empeza con mayuscula( lo mismo q la clase).
+los otros metodos empezan con miniscula.
+
+class Perro extends Animal
+class PastroAleman extends Perro
+
+polimorfismo: y lo que hay en java 
+	por ejemplo tenemos dos constructores:
+		- uno con un solo attributo(nombre)
+		- el otro con tres (nombre, edad y raza)
+	entonces se puede usar cualquier de estos constructores
+
+en java hay Ternary Operator y se hace como :: condition ? value_if_true : value_if_false;
+
+
+	

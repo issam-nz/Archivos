@@ -1,0 +1,17 @@
+Empleadas    : Empleadas: DNI, Nombre, Especialidad  
+Especialidad : (Masaje, Corte, Color, Cepillado, Manicuras, Rulos, etc.)
+Cliente      : Datos personales (DNI, Nombre, Profesión, Teléfono y Dirección)y qué tipo de
+servicio le prestó en qué fecha y hora.
+Servicios_pre: 
+Citas	     : Fecha, Hora, empleada
+Cosméticos   : Código, Nombre, Cantidad, Precio
+Ventas_cos   : Una empleada vende un cosmético a un cliente, obteniendo una comisión
+
+-----
+empleada :
+	- tiene Especialidad
+	- 
+cliente :
+	- 
+	- 
+

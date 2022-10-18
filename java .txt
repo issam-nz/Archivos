@@ -1,0 +1,36 @@
+static int sumar(int num1, int num2) {
+		return (num1 + num2);
+	}
+/*--------------------------------------*/
+static void masDe18(int edad) {
+		/*mostra si la edad mas de 18 o no*/
+		if (edad > 18 )
+			System.out.println("adulto");
+		else if (edad == 18 )
+			{
+			System.out.println("ahora tienes 18");
+			}
+		else if (edad < 18 )
+			System.out.println("monor");
+	}
+
+int x = 5, y = 3;
+System.out.println(sumar(x, y));
+
+/*--------------------------------------*/
+static void comparacion(int x, int y) {
+		if ((x > 0) & (y > 0)) {
+			System.out.println("si los dos numeros son positvos");
+		}
+		else
+			if (x < 0) {
+				System.out.println("el primer número es negativo");
+				
+			}
+			else {
+				System.out.println("el segúndo número es negativo");
+				
+			}
+	}
+
+/*--------------------------------------*/

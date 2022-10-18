@@ -1,0 +1,15 @@
+PRIMERA FORMA NORMAL (1FN):
+	Esta FN nos ayuda a eliminar los valores repetidos y no atómicos dentro de una base de datos.
+	- Todos los atributos son atómicos. Un atributo es atómico si los elementos del dominio son simples e indivisibles.
+	- La tabla contiene una clave primaria ÚNICA: si no tiene clave no es 1FN
+	- La clave primaria no contiene atributos nulos
+	- No debe existir variación en el número de columnas
+	n- Los campos no clave deben identificarse por la clave.
+	n-Debe Existir una independencia del orden tanto de las filas como de las columnas
+
+PRIMERA FORMA NORMAL (2FN):
+	n- los atributos no clave depende de TODA la clave principal.
+
+
+PRIMERA FORMA NORMAL (3FN):
+	- no existe ninguna dependencia transitiva entre los atributos que no son clave.
