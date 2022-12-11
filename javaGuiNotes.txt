@@ -1,0 +1,138 @@
+button.addActionListener(this); -> to do this we have to make our class implements ActionListener and to have a method called actionPerformed(ActionEvent e) {if (e.getSource()){ //tha we want }}
+
+@override : occurs when a subclass (child class) has the same method as the parent class
+frame.dispose() : causes the JFrame window to be destroyed or  closed
+button.setEnabled(false)
+
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ImageIcon imagen=new ImageIcon("dude.png");
+label.setIcon(imagen);
+
+label.setHorizontalTextPosition(JLabel.center);
+label.setForeground(Color.red);
+label.setBackground(Color.black);
+label.setOpaque(true); //display background color
+label.setFont(new Font(aqui el font));
+label.setIconTextGap(25); //set the gap of the text to image
+
+
+
+
+
+JButton b=new JButton("Click Here"); // it has 3 constructors
+
+-----------------------------------------
+			Frames
+// JFrame a a GUI window to add components to
+JFrame frame = new JFrame(); //creates a frame
+frame.setTitle(")Frame title goes here"); //sets title of frame
+frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //exit out of application
+frame.setResizable(false); //prevent frame from being resized
+frame.setSize(420, 420); //sets the x-dimension, and y-dimension of frame
+frame.setVisible(true); //make frame visible
+ImageIcon image = new ImageIcon("logo.png"); //create an ImageIcon
+frame.setIconImage(image.getImage()); //change icon of frame
+frame.getContentPane().setBackground(Color.green); //change color of background
+//frame.getContentPane().setBackground(new Color(0,0,255)); 
+frame.pack(); //
+frame.setLocationRelativeTo(null); //make the frame in the center of the window
+
+-----------------------------------------
+			Labels
+//Jlabel = a GUI display area for a string of text, an image or both
+	functions
+setIcon(image);
+setHorizontalTextPosition(JLabel.CENTER); //set text LEFT, CENTER, RIGHT of imageicon
+setVerticalTextPosition( (JLabel.TOP); //set text TOP,CENTER, BOTTOM of imageicon
+setForeground(new Color(0x00FFe0)); //set font color of text
+setFont(new Font("HV Boli", Font.PLAIN, 20)); //set font of text
+setIconTextGap(-25); //set gap of text to image
+setBackground(Color.black); //set background color
+setOpaque(true); //display background color
+setBorder(border); //if we didn't create a border we do
+.setBorder(BorderFactory.createEtchedBorder());
+-----------------------------------------
+			Panels
+//Jlabel = a GUI component that functions as a container to hold other componenets
+setPreferredSize(new Dimensions(250, 250))
+
+-----------------------------------------
+			Buttons
+//Jlabel = a button that perform an action when clicked on
+first we have to add implements ActionListener 
+//it has some methods similar to label - positioning, icons....
+setFocusable(False) //for deleting the textBorder of the button
+
+
+button.addActionListener(this); // here we can use this if we have a actionPerformed Method or
+
+.addActionListener(new ActionListener(){  
+public void actionPerformed(ActionEvent e){  
+            //what we want
+        }  
+
+-----------------------------------------
+			BorderLayout
+//layout manager = defines the natural layout for components within a container
+//borderLayout = places components in five areas:(NORTH,SOUTH,WEST,EAST,CENTER)
+frame.setLayout(new BorderLayout())// in() we can add 2 numbers - marginX, marginY 
+frame.add(panel1, BorderLayout.NORTH)
+
+panel1.add(panel5, BorderLayout.NORTH) //sub panel
+
+-----------------------------------------
+			FlowLayout
+frame.setLayout(new FlowLayout()) //in() we can add FlowLayout.LEADING- TRAILING or Center..., also 2 integers- spacingH and spacingV 
+
+
+-----------------------------------------
+			GridLayout
+setLayout(new GridLayout(row, col, spaceH, spaceV)) //or without params
+
+
+-----------------------------------------
+			LayeredPane
+panel.add(label1, Integer.valueof(0)) // or other number or
+panel.add(label1, JLayeredPane.DEFAULT) //or others
+-----------------------------------------
+			open new GUI window
+check ytb bro Code
+-----------------------------------------
+			JOptionPane
+ check ytb bro Code
+-----------------------------------------
+			textfield
+ 
+-----------------------------------------
+			checkboxes
+ checkbox.setIcon(iconA); //when checkBox is unchecked
+ checkbox.setSelectedIcon(iconB); //when checkBox is checked
+-----------------------------------------
+			radioButtons
+ButtonGroup group = new.....
+JRadioButton buton1 = new JRadioButton("button1");
+group.add(button1)....2 and 3 and more
+
+-----------------------------------------
+			Frames
+ 
+-----------------------------------------
+			Frames
+ 
+-----------------------------------------
+			Frames
+ 
+-----------------------------------------
+			Frames
+ 
+-----------------------------------------
+			Frames
+ 
+-----------------------------------------
+			Frames
+ 
+-----------------------------------------
+			Frames
+ 
