@@ -1,0 +1,23 @@
+en linux :
+	sudo mysql -u root -p : para entrar a mysql
+
+
+
+
+
+para modificar un atributo de una tabla (despues de crear la base de datos y las tablas)
+ALTER TABLE naves CHANGE Codigo Codigo INT( 11 ) NOT NULL AUTO_INCREMENT;
+
+para modificar - q un campo sea una enumeracion:
+ALTER TABLE planetas MODIFY COLUMN Galaxia ENUM('Via Láctea', 'Andromeda', 'Sombrero');
+
+
+
+
+
+codigo para entregar
+ALTER TABLE peliculas CHANGE Codigo Codigo INT( 11 ) NOT NULL AUTO_INCREMENT;
+ALTER TABLE personajes CHANGE Codigo Codigo INT( 11 ) NOT NULL AUTO_INCREMENT;
+ALTER TABLE planetas CHANGE Codigo Codigo INT( 11 ) NOT NULL AUTO_INCREMENT;
+
+ALTER TABLE planetas MODIFY COLUMN Galaxia ENUM('Via Láctea', 'Andromeda', 'Sombrero');

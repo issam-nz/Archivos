@@ -1,0 +1,67 @@
+en el directorio dev hay : discos de almacenamiento-particiones(sistema de archivos)
+
+
+mount:
+	-a : 	Mounts all file systems listed in /etc/fstab
+		fstab:o File System Table en Linux es el encargado de almacenar información descriptiva acerca de los diferentes sistemas de ficheros del equipo
+
+	-v : Mounts verbosely, describing each operation (verbose mode).
+	-w --rw, --read-write : 
+	-r: Mounts the file system in read-only mode
+	-t: tipo de archivos 
+
+
+
+
+to find a all the files the have an extension : find Directory Options Expression : ej: find . -type f -name "*.txt"
+
+
+
+
+
+paginas para entender fdisk y gdisk:
+	https://rm-rf.es/crear-y-eliminar-particiones-con-fdisk-en-linux/
+	https://exmatuz.com/crear-redimensionar-particiones-gdisk/
+la ultima cosa q hecho en jueves 15/12 en sistemas es crear una particion "sdc1" pero hay un problema
+mejor eliminarla y instalarla de nuevo 
+	
+
+
+lsblk o fdisk -l  : para ver los discos
+
+-----------------fdisk-------------------------
+crear una particion usuando el fdisk
+sudo fdisk /dev/sda: sda o sdb depenede donde tenemos la partition 
+orden -> n : esto es para añadir una nueva particion 
+	e o p : para una particion extendida o primaria
+	despues valores : numero de particion, primer cilendro, ultimo cilendro . se puede añadir el tamaño y la letra para decir si es en K, M, G
+
+w: para escribir los cambios 
+
+sudo partprobe:  inform the operating system kernel of partition table changes
+
+mkfs.ext4  /dev/sda3 : formatear la particion sda3 como ext4 
+
+sudo mount -t "file system" [particion] [direccion] : para montear 
+ej : sudo mount -t ext4 /dev/sdb1 /home
+
+y para quitar una particion con fdisk usamos el comando p
+
+-----------------gdisk-------------------------
+sudo apt-get install gdisk: para instalar el paquete
+sudo fdisk -l /dev/sdb : sdb es el disco
+sudo gdisk /dev/sdb
+n : para agregar una nueva particion 
+ podemos escribir 1, o solamente dar Enter para que tome el número disponible 
+ 
+ seleccionar el tamaño 
+ podemos usar el comando p para verificar la nueva particion
+ w: para guardar los cambios
+ 
+ sudo partprobe -s
+ 
+ sudo pvcreate /dev/sdb1:  para crear volumen fisico
+ 
+ sudo vgcreate new_volume /dev/sdb1: para crear grupo de volumenes
+ 
+ 
